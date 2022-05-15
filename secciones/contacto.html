@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <title>GRO Contacto</title>
+</head>
+
+<body>
+    <div class="grillacontacto">
+        <header class="header">
+            <nav>
+                <a href="../index.html">
+                    <img class="logo" src="../img/logodos.jpg" alt="logo">
+                </a>
+                <ul class="navbar">
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="quienessomos.html">Quienes Somos</a>
+                    </li>
+                    <li>
+                        <a href="productos.html">Productos</a>
+                    </li>
+                    <li>
+                        <a href="sucursales.html">Sucursales</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="contacto">
+
+            <div class="titulocontacto">
+                <h1>Contacto</h1>
+            </div>
+            <div class="datoscontacto">
+                <form action="#">
+                    <label for="nombre">Ingrese su Nombre y Apellido:
+                        <input type="text" placeholder="nombre y apellido" name="nombre"><br>
+                    </label>
+                    <label for="email">Ingrese su email:
+                        <input type="email" placeholder="aaa@gmail.com" name="email"><br>
+                    </label>
+                    <div>
+                        <p>Sexo:</p>
+                        <div>Femenino
+                            <input type="radio" name="sexo" value="femenino">
+                        </div>
+                        <div>Masculino
+                            <input type="radio" name="sexo" value="masculino">
+                        </div>
+                    </div>
+                    <p>Como nos conociste?</p>
+                    <select name="conociste" id="conociste">
+                        <option value="recomendacion">Recomendacion de un amigo</option>
+                        <option value="redes">Redes Sociales</option>
+                        <option value="internet">Internet</option>
+                    </select><br>
+                    <label for="consulta"> Consulta:<br>
+                        <textarea placeholder="escriba su consulta aqui"></textarea>
+                    </label> <br>
+                    <div>Desea recibir novedades de nuestros productos?
+                        <input type="checkbox" name="acepta" value="1">
+                    </div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Resetear">
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="direcciones">
+                <h3>DONDE ESTAMOS</h3>
+                <h4>Avenida Belgrano (s) 1171 - Santiago del Estero - Argentina</h4>
+            </div>
+            <div class="redes">
+                <h3>SIGUENOS EN</h3>
+                <div class="iconos">
+                    <a href="https://facebook.com"> <img src="../img/facebook.png" alt="facebook">
+                    </a>
+                    <a href="https://instagram.com"> <img src="../img/instagram.png" alt="instagram">
+                    </a>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>
