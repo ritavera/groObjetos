@@ -1,0 +1,202 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2? family= Baile+Guión & family= Josefin+Sans & family= Poppins:wght@200 & family= Roboto:wght@100 & family= Shadows+Into+Light & family= Square+Peg & display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  color: white;
+  margin-bottom: 0;
+  bottom: 0px;
+  background-image: url("../img/fondouno.jpg");
+  background-size: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+footer .direcciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .direcciones h3 {
+  padding: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer .direcciones h4 {
+  font-size: 11px;
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+footer .direcciones .iconos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .direcciones .iconos a img {
+  margin: 5px;
+  width: 35px;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+
+header .fondoheader {
+  background-image: url("../img/fondouno.jpg");
+}
+
+header .fondoheader .contenedor .hamburguesa {
+  background-color: white;
+}
+
+header .fondoheader .contenedor a .logo {
+  height: 75px;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+.colorcontacto:checked {
+  background-color: black;
+  border: black;
+}
+
+.colorcontacto {
+  background-color: black;
+  border: black;
+}
+
+.tarjeta img {
+  height: 600px;
+}
+
+.tarjeta:hover {
+  -webkit-animation: tarjetaanimacion 2s;
+          animation: tarjetaanimacion 2s;
+}
+
+@-webkit-keyframes tarjetaanimacion {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+            transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+            transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+            transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+            transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+            transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+@keyframes tarjetaanimacion {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+            transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+            transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+            transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+            transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+            transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+.videovideo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.tarjetassuc {
+  height: 750px;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+  max-width: 300px;
+  max-height: 700px;
+}
+
+.carousel-inner img {
+  width: 100px;
+  height: 400px;
+}
+/*# sourceMappingURL=estilos.css.map */
