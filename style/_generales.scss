@@ -5,6 +5,44 @@
     margin: 0;
 }
 
+/*aplique map, extend, mixin en los iconos de redes despues los voy a sacar*/
+$redessociales: (
+    facebook:dashed,
+    instagram:double
+);
+
+@each $network,
+$borde in $redessociales {
+    .red--#{$network} {
+        border-style: $borde;
+    }
+}
+
+.social {
+    border-color: yellow;
+}
+
+.red--facebook {
+    @extend.social;
+}
+
+.red--instagram {
+    @extend.social;
+}
+
+@mixin forma ($margen, $ancho) {
+    margin: $margen;
+    width: $ancho;
+}
+
+.red--facebook {
+    @include forma(5px, 35px);
+}
+
+.red--instagram {
+    @include forma(5px, 35px);
+}
+
 footer {
     color: white;
     margin-bottom: 0;
@@ -39,12 +77,6 @@ footer {
             align-items: center;
             justify-content: space-evenly;
 
-            a {
-                img {
-                    margin: 5px;
-                    width: 35px;
-                }
-            }
         }
     }
 }

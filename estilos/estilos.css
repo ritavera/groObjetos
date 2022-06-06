@@ -5,6 +5,29 @@
   margin: 0;
 }
 
+/*aplique map, extend, mixin en los iconos de redes despues los voy a sacar*/
+.red--facebook {
+  border-style: dashed;
+}
+
+.red--instagram {
+  border-style: double;
+}
+
+.social, .red--facebook, .red--instagram {
+  border-color: yellow;
+}
+
+.red--facebook {
+  margin: 5px;
+  width: 35px;
+}
+
+.red--instagram {
+  margin: 5px;
+  width: 35px;
+}
+
 footer {
   color: white;
   margin-bottom: 0;
@@ -58,11 +81,6 @@ footer .direcciones .iconos {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-}
-
-footer .direcciones .iconos a img {
-  margin: 5px;
-  width: 35px;
 }
 
 @media only screen and (max-width: 768px) {
