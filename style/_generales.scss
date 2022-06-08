@@ -5,49 +5,12 @@
     margin: 0;
 }
 
-/*aplique map, extend, mixin en los iconos de redes despues los voy a sacar*/
-$redessociales: (
-    facebook:dashed,
-    instagram:double
-);
-
-@each $network,
-$borde in $redessociales {
-    .red--#{$network} {
-        border-style: $borde;
-    }
-}
-
-.social {
-    border-color: yellow;
-}
-
-.red--facebook {
-    @extend.social;
-}
-
-.red--instagram {
-    @extend.social;
-}
-
-@mixin forma ($margen, $ancho) {
-    margin: $margen;
-    width: $ancho;
-}
-
-.red--facebook {
-    @include forma(5px, 35px);
-}
-
-.red--instagram {
-    @include forma(5px, 35px);
-}
-
 footer {
     color: white;
-    margin-bottom: 0;
+    margin-bottom: 0px;
     bottom: 0px;
     background-image: $fondo;
+    height: 80px;
     background-size: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -61,6 +24,8 @@ footer {
 
         h3 {
             padding: 5px;
+            margin: 1px;
+
             font-size: 13px;
             font-weight: bold;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -77,14 +42,24 @@ footer {
             align-items: center;
             justify-content: space-evenly;
 
-        }
-    }
-}
+            a {
+                @mixin forma ($margen, $ancho) {
+                    margin: $margen;
+                    width: $ancho;
+                }
 
-@media only screen and (max-width: 768px) {
-    footer {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+                img {
+                    @include forma(5px, 35px);
+                    transition: all 2s;
+                }
+
+                img:hover {
+                    transform: rotate(360deg);
+                }
+
+            }
+
+        }
     }
 }
 
@@ -108,10 +83,6 @@ header {
     }
 }
 
-@media (min-width: 992px) {
-    .navbar {
-        display: flex;
-        justify-content: flex-end;
-    }
-
+body {
+    background-color: rgb(219, 210, 210);
 }

@@ -5,34 +5,12 @@
   margin: 0;
 }
 
-/*aplique map, extend, mixin en los iconos de redes despues los voy a sacar*/
-.red--facebook {
-  border-style: dashed;
-}
-
-.red--instagram {
-  border-style: double;
-}
-
-.social, .red--facebook, .red--instagram {
-  border-color: yellow;
-}
-
-.red--facebook {
-  margin: 5px;
-  width: 35px;
-}
-
-.red--instagram {
-  margin: 5px;
-  width: 35px;
-}
-
 footer {
   color: white;
-  margin-bottom: 0;
+  margin-bottom: 0px;
   bottom: 0px;
   background-image: url("../img/fondouno.jpg");
+  height: 80px;
   background-size: 100%;
   display: -ms-grid;
   display: grid;
@@ -60,6 +38,7 @@ footer .direcciones {
 
 footer .direcciones h3 {
   padding: 5px;
+  margin: 1px;
   font-size: 13px;
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -83,13 +62,16 @@ footer .direcciones .iconos {
           justify-content: space-evenly;
 }
 
-@media only screen and (max-width: 768px) {
-  footer {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-  }
+footer .direcciones .iconos a img {
+  margin: 5px;
+  width: 35px;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+footer .direcciones .iconos a img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 header .fondoheader {
@@ -104,15 +86,8 @@ header .fondoheader .contenedor a .logo {
   height: 75px;
 }
 
-@media (min-width: 992px) {
-  .navbar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
+body {
+  background-color: #dbd2d2;
 }
 
 .colorcontacto:checked {
@@ -216,5 +191,26 @@ header .fondoheader .contenedor a .logo {
 .carousel-inner img {
   width: 100px;
   height: 400px;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    height: 170px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
