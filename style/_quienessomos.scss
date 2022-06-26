@@ -1,0 +1,12 @@
+.carousel,
+.carousel-inner,
+.carousel-item {
+    max-width: 300px;
+    max-height: 700px;
+    border-radius: $vertice;
+}
+
+.carousel-inner img {
+    width: 100px;
+    height: 400px;
+}

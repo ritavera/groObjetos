@@ -10,7 +10,7 @@ footer {
     margin-bottom: 0px;
     bottom: 0px;
     background-image: $fondo;
-    height: 80px;
+    height: 85px;
     background-size: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -32,9 +32,10 @@ footer {
         }
 
         h4 {
-            font-size: 11px;
+            font-size: 12px;
             font-style: italic;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            ;
         }
 
         .iconos {
@@ -43,20 +44,16 @@ footer {
             justify-content: space-evenly;
 
             a {
-                @mixin forma ($margen, $ancho) {
-                    margin: $margen;
-                    width: $ancho;
+
+                i {
+                    color: white;
+                    font-size: 25px;
+                    margin: 5px;
                 }
 
-                img {
-                    @include forma(5px, 35px);
-                    transition: all 2s;
+                i:hover {
+                    color: gray;
                 }
-
-                img:hover {
-                    transform: rotate(360deg);
-                }
-
             }
 
         }

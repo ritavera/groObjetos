@@ -10,7 +10,7 @@ footer {
   margin-bottom: 0px;
   bottom: 0px;
   background-image: url("../img/fondouno.jpg");
-  height: 80px;
+  height: 85px;
   background-size: 100%;
   display: -ms-grid;
   display: grid;
@@ -45,7 +45,7 @@ footer .direcciones h3 {
 }
 
 footer .direcciones h4 {
-  font-size: 11px;
+  font-size: 12px;
   font-style: italic;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -62,16 +62,14 @@ footer .direcciones .iconos {
           justify-content: space-evenly;
 }
 
-footer .direcciones .iconos a img {
+footer .direcciones .iconos a i {
+  color: white;
+  font-size: 25px;
   margin: 5px;
-  width: 35px;
-  -webkit-transition: all 2s;
-  transition: all 2s;
 }
 
-footer .direcciones .iconos a img:hover {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+footer .direcciones .iconos a i:hover {
+  color: gray;
 }
 
 header .fondoheader {
@@ -186,11 +184,45 @@ body {
 .carousel-item {
   max-width: 300px;
   max-height: 700px;
+  border-radius: 10px;
 }
 
 .carousel-inner img {
   width: 100px;
   height: 400px;
+}
+
+.columnaproducto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.columnaproducto .producto img {
+  height: 380px;
+  width: 218px;
+}
+
+.columnaproducto .producto .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
 }
 
 @media only screen and (max-width: 768px) {

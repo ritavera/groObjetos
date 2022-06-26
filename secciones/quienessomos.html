@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5b69db6840.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/estilos.css">
@@ -28,9 +29,6 @@
                 <div class="collapse navbar-collapse navbar" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link text-white" href="quienessomos.html">Quienes Somos</a>
                         </li>
                         <li class="nav-item">
@@ -48,43 +46,72 @@
         </nav>
     </header>
     <main>
-        <section class="container mt-2 mb-1 p-1">
+        <section class="container mb-1 p-2">
             <h1 class="fs-3 text-center fw-bolder mt-1 mb-3 p-3">Quienes Somos</h1>
-            <p class="parrafo fst-italic text-center">
+            <p class="fst-italic text-center">
                 Somos una empresa familiar, dedicada al diseño de muebles y la decoración.
             </p>
-            <p class="parrafo fst-italic text-center">
+            <p class="fst-italic text-center">
                 Actualmente, muchos optan por la combinación de estilos y a la hora de hacerlo hay muchísimas opciones.
                 En GRO Objetos de Diseño podemos asesorarte para lograr equilibrio y armonía en tus ambientes, gracias a
                 la variedad de artículos que fabricamos. Creando hogares cómodos, funcionales, lindos y personales
                 para todos los gustos y necesidades.
             </p>
-            <section class="container mb-2 mt-4 p-2">
-                <div class="origenes row">
-                    <div class=" col-lg-4 col-sd-12">
-                        <h2 class="text-center mt-4 p-3">Nuestra Empresa</h2>
-                    </div>
-                    <div class="col-lg-8 col-sd-12 p-1">
-                        <p class="text-center">
-                            Somos una familia de profesionales, con 5 años de trayectoria en la fabricación de muebles y
-                            objetos para la decoracion de ambientes.Nos dedicamos al reciclaje de materiales con los
-                            cuales construimos ambientes con estilo
-                            elegante y distinguido.
-                        </p>
-                        <p class="text-center">
-                            Iniciamos nuestro camino con el propósito
-                            de mejorar la calidad de vida en los hogares de cada uno de nuestros clientes, buscando
-                            siempre diseño de vanguardia e incorporando permanentemente muebles y objetos que trasladen
-                            a distintos rincones del mundo.
-                            Sentimos pasión por los detalles y queremos lograr que cada
-                            ambiente sea único e irrepetible.
-                        </p>
+        </section>
+        <section class="container mb-1 p-1">
+            <div class="row">
+                <div class="col-lg-8 col-sd-12 d-flex flex-column d-flex justify-content-center">
+                    <h2 class="fst-italic text-center p-1">Nuestra Empresa</h2>
+                    <p class="fst-italic text-center">
+                        Somos una familia de profesionales, con 5 años de trayectoria en la fabricación de muebles y
+                        objetos para la decoracion de ambientes. Nos dedicamos al reciclaje de materiales con los
+                        cuales construimos ambientes con estilo elegante y distinguido.
+                    </p>
+                    <p class="fst-italic text-center">
+                        Iniciamos nuestro camino con el propósito
+                        de mejorar la calidad de vida en los hogares de cada uno de nuestros clientes, buscando
+                        siempre diseños de vanguardia e incorporando permanentemente muebles y objetos que trasladen
+                        a distintos rincones del mundo. Sentimos pasión por los detalles y queremos lograr que cada
+                        ambiente sea único e irrepetible.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-sd-12">
+                    <div id="carouselExampleIndicators" class="carousel slide mx-auto" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../img/lampara.jpg" class="d-block w-100" alt="lampara">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/escritorio.jpg" class="d-block w-100" alt="escritorio">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/comedor.jpg" class="d-block w-100" alt="comedor">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
-            </section>
+            </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer>
         <div class="direcciones">
             <h3>DONDE ESTAMOS</h3>
             <h4>Avenida Belgrano (s) 1171 - Santiago del Estero - Argentina</h4>
@@ -92,9 +119,11 @@
         <div class="direcciones">
             <h3>SIGUENOS EN</h3>
             <div class="iconos">
-                <a href="https://facebook.com"> <img src="../img/facebook.png" alt="facebook">
+                <a href="https://facebook.com" target="_blank"> <i class="fa-brands fa-facebook"></i>
                 </a>
-                <a href="https://instagram.com"> <img src="../img/instagram.png" alt="instagram">
+                <a href="https://instagram.com" target="_blank"> <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank"> <i class="fa-brands fa-twitter"></i>
                 </a>
             </div>
         </div>
