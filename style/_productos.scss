@@ -2,21 +2,14 @@
     .producto {
 
         img {
-            height: 380px;
+            height: 400px;
             width: 218px;
         }
 
-        .card-body {
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            align-content: space-around;
-        }
     }
 
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     align-content: space-around;
-
 }
